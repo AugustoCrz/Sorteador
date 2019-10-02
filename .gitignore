@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main(){
+	
+	int a,b,c,d,e;
+	
+	srand( time(NULL));
+	a = rand() % 60;
+	b = rand() % 60;
+	c = rand() % 60;
+	d = rand() % 60;
+	e = rand() % 60;
+	
+	printf("\nJogo 1: %d %d %d %d %d",a,b,c,d,e);
+	
+	return 0;
+}
